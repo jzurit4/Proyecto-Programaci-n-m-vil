@@ -25,15 +25,12 @@ export class LoginPage implements OnInit {
       let navigationExtras : NavigationExtras ={
         state: {login : this.login}
       };
-      this.router.navigate(['/home'],navigationExtras);
+      this.router.navigate(['/tab-inicial/inicio'],navigationExtras);
     }else{
       this.presentToast("top","Error - Falta: "+this.field,5000);
     }    
   }
 
-  registrar(){
-    this.router.navigate(['/registrar']);
-  }
 
   validateModel(model:any){
     //Recorro el modelo 'login' revisando las entradas del Object
