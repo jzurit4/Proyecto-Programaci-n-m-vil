@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'intro',
     pathMatch: 'full'
   },
   {
@@ -19,6 +19,15 @@ const routes: Routes = [
     path: 'tab-inicial',
     loadChildren: () => import('./page/tab-inicial/tab-inicial.module').then( m => m.TabInicialPageModule)
   },
+  {
+    path: 'intro',
+    loadChildren: () => import('./page/intro/intro.module').then( m => m.IntroPageModule)
+  },  {
+    path: 'restore',
+    loadChildren: () => import('./page/restore/restore.module').then( m => m.RestorePageModule)
+  },
+
+
   
 
 ];
