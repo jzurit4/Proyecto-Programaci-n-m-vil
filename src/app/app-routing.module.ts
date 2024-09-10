@@ -22,9 +22,14 @@ const routes: Routes = [
   {
     path: 'intro',
     loadChildren: () => import('./page/intro/intro.module').then( m => m.IntroPageModule)
-  },  {
+  },
+  {
     path: 'restore',
     loadChildren: () => import('./page/restore/restore.module').then( m => m.RestorePageModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./page/error/error.module').then( m => m.ErrorPageModule)
   },
 
 
