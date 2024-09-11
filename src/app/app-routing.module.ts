@@ -19,6 +19,7 @@ const routes: Routes = [
     path: 'tab-inicial',
     loadChildren: () => import('./page/tab-inicial/tab-inicial.module').then( m => m.TabInicialPageModule)
   },
+  
   {
     path: 'intro',
     loadChildren: () => import('./page/intro/intro.module').then( m => m.IntroPageModule)
@@ -27,13 +28,11 @@ const routes: Routes = [
     path: 'restore',
     loadChildren: () => import('./page/restore/restore.module').then( m => m.RestorePageModule)
   },
+
   {
     path: '**',
     loadChildren: () => import('./page/error/error.module').then( m => m.ErrorPageModule)
   },
-
-
-  
 
 ];
 
