@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras,Router } from '@angular/router';
-import { ToastController } from '@ionic/angular';
+import { NavController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -15,10 +15,11 @@ export class LoginPage implements OnInit {
   //defino una variable para indicar el campo vacío
   field:string="";
 
-  constructor(public router:Router, public toastController:ToastController) { }
+  constructor(public router:Router, public toastController:ToastController,private navController: NavController) { }
 
   ngOnInit() {
   }
+
   ingresar(){
     if(this.validateModel(this.login)){
       this.presentToast("top","Bienvenid@");
