@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="t1">
+    <ion-title>Recuperar contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<hr>
+<hr>
+<hr>
+<hr>
+<ion-content color="danger" [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Recuperar contraseña</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png" />
+          </ion-thumbnail>
+          <ion-label>
+            <ion-input label="Usuario" labelPlacement="floating" placeholder="Enter text"></ion-input>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-row>
+        <ion-col>
+          <ion-button  expand="block">Recuperar contraseña</ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <p class="ion-text-center">
+            <a routerLink="/login">¿Ya tienes una cuenta?</a>
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
